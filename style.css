@@ -11,7 +11,7 @@ body {
     font-size: 1.6rem;
 }
 
-main{
+main {
     max-width: 33.0rem;
     margin: 0 auto;
 }
@@ -88,24 +88,29 @@ ul {
 }
 
 ul li {
-    color:#090039;
+    color: #090039;
     font-feature-settings: 'clig' off, 'liga' off;
-    
+
     font-family: "Epilogue", sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 3.2rem;
-   
+
     max-width: 25.7rem;
 
     display: flex;
-   gap: 3.8rem;
+    gap: 3.8rem;
 }
 
-ul li span {
-    color:#090039;
+ul li + li {
+    margin-top: 3.2rem;
+}
 
-    
+
+ul li span {
+    color: #090039;
+
+
     font-family: "Epilogue", sans-serif;
     font-size: 7.2rem;
     font-weight: 800;
@@ -114,8 +119,29 @@ ul li span {
 }
 
 /* media queries */
-@media (min-width: 500px) {
-    body {
-        background-color:black ;
+@media (min-width: 700px) {
+    
+body {
+    padding-top: 8rem ;
+}
+
+    main {
+        max-width: 1020px;
+        display: flex;
+        gap: 10rem;
+    }
+
+    main > div {
+        max-width: 484px;
+    }
+
+    ul li {
+        gap: 5.3rem;
+        max-width: 450px;
+        align-items: center;
+    }
+
+    ul li + li {
+        margin-top: 3.2rem;
     }
 }
